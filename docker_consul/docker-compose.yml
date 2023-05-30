@@ -1,0 +1,14 @@
+version: '3'
+services:
+  consul:
+    image: hashicorp/consul:1.15.2
+    container_name: consul
+    restart: always
+    ports:
+      - "8500:8500"
+      - "8600:8600"
+      - "8600:8600/udp"
+    command: agent -server -bind 0.0.0.0 -client 0.0.0.0 -bootstrap-expect 1 -config-file=/consul/config/config.json
+    volumes:
+      - /interation/consul/config/consul-config.json:/consul/config/config.json
+      - /interation/consul/data:/consul/data

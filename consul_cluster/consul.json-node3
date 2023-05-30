@@ -1,0 +1,30 @@
+{
+        "node_name": "node3",
+        "data_dir": "./data",
+        "log_level": "TRACE",
+        "ui_config": {
+                "enabled": true
+        },
+        "client_addr": "0.0.0.0",
+        "bind_addr": "172.16.10.79",
+        "server": true,
+        "ports": {
+                "http": 8500
+        },
+        "start_join": [
+                "172.16.10.77",
+                "172.16.10.78",
+                "172.16.10.79"
+        ],
+        "retry_join": [
+                "172.16.10.77",
+                "172.16.10.78",
+                "172.16.10.79"
+        ],
+        "bootstrap_expect": 3,
+        "primary_datacenter": "dc1",
+        "datacenter": "dc1",
+        "acl_master_token": "yep",
+        "acl_default_policy": "allow",
+        "encrypt": "4nEBRlzEXQFfnzMal4yQFhSTZNIZRVZb4GACglExQE4="
+}

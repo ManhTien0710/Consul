@@ -1,0 +1,11 @@
+{
+    "node_name": "cn247",
+    "datacenter": "dc1",
+    "data_dir": "/interation/consul/data",
+    "log_level": "DEBUG",
+    "server": true,
+    "ui": true,
+    "ports": {
+      "http": 8500
+    }
+}
