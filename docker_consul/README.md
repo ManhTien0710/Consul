@@ -2,6 +2,7 @@
 ```bash
 mkdir -p /interation/consul
 mkdir -p /interation/consul/data
+mkdir -p /interation/consul/config
 vi /interation/consul/config/consul-config.json
 ```
 # docker compose
